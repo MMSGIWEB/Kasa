@@ -1,10 +1,17 @@
-import './App.css';
+import React from "react";
+import '../src/styles/css/App.css';
+import Home from './pages/Home';
+import Fiche from './pages/Fiche';
+import About from '../src/pages/About';
+import Error from '../src/pages/Error';
+
 
 function App() {
   return (
-      <header className="App-header">
-      </header>
-  );
-}
+      <Home/>
+      // <Fiche/>,
+      // <About/>,
+      // <Error/>
+  )}
 
 export default App;
