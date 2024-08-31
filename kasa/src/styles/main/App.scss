@@ -2,12 +2,29 @@
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-}
+// html {
+//     margin: 1em 2em;
+// }
 
 body {
     padding: 1em 2em;
+    box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+
+
 @import '../layouts/Navbar';
+@import '../layouts/banner';

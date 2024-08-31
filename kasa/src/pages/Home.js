@@ -1,9 +1,17 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
+import Image1 from "../assets/images/banner/Image1.png";
 
-function Home () {
+
+function Home() {
     return (
-        <Navbar/>
+        <>
+            <main>
+                <Navbar />
+                <Banner image={Image1} text="Chez vous, partout et ailleurs" />
+            </main>
+        </>
     )
 }
 

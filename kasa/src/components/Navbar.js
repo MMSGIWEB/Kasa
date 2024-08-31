@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../assets/images/logo/logo.png"
 
 function Navbar() {
     return (
         <header className="navbar">
             <div className="logo">
-                <img src="../assets/images/logo/logo.png" alt="logo kasa" />
+                <img src={logo} alt="logo kasa"/>
             </div>
             <nav className="navigation" >
                 <a className="index" href="#">Accueil</a>
