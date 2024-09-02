@@ -7,8 +7,8 @@ import Image1 from "../assets/images/banner/Image1.png";
 function Home() {
     return (
         <>
+            <Navbar />
             <main>
-                <Navbar />
                 <Banner text="Chez vous, partout et ailleurs" />
             </main>
         </>

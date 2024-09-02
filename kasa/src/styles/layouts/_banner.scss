@@ -2,17 +2,14 @@
 
 .banner {
     position: relative;
-    min-height: 140px;
+    min-height: 180px;
     border-radius: 25px;
-    // height: 150px;
-    // @include flexcc;
-    // margin: 0 1em;
-    // width: 100%;
-    max-width: 80vw;
-    margin: auto;
+    width: 90vw;
     display: grid;
     place-items: center;
     background-image: url('/src/assets/images/banner/Image1.png');
+    background-position: right;
+    background-size: cover;
 
     &::before {
         position: absolute;
@@ -20,17 +17,15 @@
         content: "";
         inset: 0;
         background-color: rgba(0,0,0,0.6);
+        // opacity: .6;
     }
 
     .bannerText {
-    //     display: block;
-    //     position: absolute;
-    //     top: 11em;
-    //     z-index: 3;
+        z-index: 1;
         font-family: 'Montserrat';
-        font-weight: 700;
-        font-size: 1.5em;
-    //     // color: #FFFFFF;
+        font-weight: 600;
+        font-size: 2.7em;
+        color: #FFFFFF;
     }
 
 }

@@ -1,14 +1,19 @@
+@import '../details/mixin';
+
 * {
     text-decoration: none;
 }
 
-// html {
-//     margin: 1em 2em;
-// }
+#root {
+    @include flexcc;
+    flex-direction: column;
+    gap: 3em;
+}
 
 body {
     padding: 1em 2em;
     box-sizing: border-box;
+
 }
 
 img {
@@ -22,6 +27,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 2em;
+    border: 1.5px solid red;
 }
 
 

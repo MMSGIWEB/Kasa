@@ -2,14 +2,6 @@
   text-decoration: none;
 }
 
-#root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 3em;
-}
-
 body {
   padding: 1em 2em;
   box-sizing: border-box;
@@ -26,7 +18,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 2em;
-  border: 1.5px solid red;
 }
 
 header {
@@ -77,9 +68,7 @@ header nav .about:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .banner .bannerText {
-  z-index: 1;
   font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 2.7em;
-  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1.5em;
 }/*# sourceMappingURL=App.css.map */
