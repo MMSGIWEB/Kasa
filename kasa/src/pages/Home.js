@@ -9,7 +9,7 @@ function Home() {
         <>
             <main>
                 <Navbar />
-                <Banner image={Image1} text="Chez vous, partout et ailleurs" />
+                <Banner text="Chez vous, partout et ailleurs" />
             </main>
         </>
     )
