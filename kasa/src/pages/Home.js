@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import Image1 from "../assets/images/banner/Image1.png";
+import Logements from "../components/Logements";
 
 
 function Home() {
@@ -10,9 +10,10 @@ function Home() {
             <Navbar />
             <main>
                 <Banner text="Chez vous, partout et ailleurs" />
+                <Logements/>
             </main>
         </>
     )
 }
 
-export default Home
+export default Home;
