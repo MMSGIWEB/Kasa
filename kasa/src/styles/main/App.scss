@@ -26,7 +26,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 4em;
     border: 1.5px solid red;
 }
 
@@ -34,4 +34,5 @@ main {
 
 @import '../layouts/Navbar';
 @import '../layouts/banner';
-@import '../partials/Logements';
+@import '../partials/cards';
+@import '../layouts/footer';

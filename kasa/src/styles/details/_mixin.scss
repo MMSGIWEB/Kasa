@@ -3,3 +3,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin flexSaC {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

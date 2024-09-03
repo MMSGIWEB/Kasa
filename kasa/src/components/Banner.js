@@ -3,7 +3,7 @@ import React from "react";
 function Banner({ image, text }) {
     return (
         <div className="banner">
-            <span className="bannerText">{text}</span>
+            <h1 className="bannerText">{text}</h1>
         </div>
     )
 }

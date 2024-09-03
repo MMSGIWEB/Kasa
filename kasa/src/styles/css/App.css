@@ -25,7 +25,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 4em;
   border: 1.5px solid red;
 }
 
@@ -82,4 +82,44 @@ header nav .about:hover {
   font-weight: 600;
   font-size: 2.7em;
   color: #FFFFFF;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -moz-column-gap: 0.5em;
+       column-gap: 0.5em;
+  row-gap: 3em;
+  box-sizing: border-box;
+  width: 1400px;
+  background: #F6F6F6;
+  border-radius: 25px;
+  padding: 3em 0;
+}
+.cardsContainer .cardLink {
+  display: flex;
+  background: linear-gradient(orange, red);
+  width: 25%;
+  border-radius: 10px;
+  height: 350px;
+}
+.cardsContainer .cardLink .cardTitle {
+  width: 120px;
+  position: relative;
+  inset: 14em 0 0 1em;
+  text-wrap: wrap;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FFFFFF;
+}
+.cardsContainer .cardLink .cardTitle:hover {
+  text-overflow: none;
+  overflow: initial;
 }/*# sourceMappingURL=App.css.map */
