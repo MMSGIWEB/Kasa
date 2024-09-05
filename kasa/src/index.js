@@ -1,13 +1,54 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Error from '../src/pages/Error';
+import Fiche from './pages/Fiche';
+import About from './pages/About';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+
+//on définit root comme racine
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    //si path != à l'un de ceux dans ce fichier alors => "/404"
+    errorElement: 
+    <>
+    <Navbar />
+    <h2>404</h2>
+    <Footer />
+    </>
+
+  },
+  {
+    path: "/about",
+    element: 
+    <>
+    <Navbar />
+    <h2>A propos</h2>
+    <Footer />
+    </>
+  },
+  {
+    path: "/fiche",
+    element:
+    <>
+    <Navbar />
+    <h2>fiche logement</h2>
+    <Footer />
+    </>
+  },
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

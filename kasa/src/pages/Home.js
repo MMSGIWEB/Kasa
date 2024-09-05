@@ -12,8 +12,8 @@ function Home() {
             <main>
                 <Banner text="Chez vous, partout et ailleurs" />
                 <Logements/>
-                <Footer img={footerLogo} copyRights="© 2020 Kasa. All rights reserved"/>
             </main>
+            <Footer img={footerLogo} copyRights="© 2020 Kasa. All rights reserved"/>
         </>
     )
 }
