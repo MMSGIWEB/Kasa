@@ -80,7 +80,7 @@ header nav .about:hover {
   z-index: 1;
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: 2.7em;
+  font-size: 2em;
   color: #FFFFFF;
 }
 
@@ -94,19 +94,23 @@ header nav .about:hover {
        column-gap: 0.5em;
   row-gap: 3em;
   box-sizing: border-box;
-  width: 1400px;
+  width: 100%;
   background: #F6F6F6;
   border-radius: 25px;
-  padding: 3em 0;
+  padding: 3em 1em;
 }
-.cardsContainer .cardLink {
+.cardsContainer article {
+  width: 30%;
+}
+.cardsContainer article .cardLink {
   display: flex;
   background: linear-gradient(orange, red);
-  width: 25%;
+  opacity: 0.4;
+  width: 100%;
   border-radius: 10px;
   height: 350px;
 }
-.cardsContainer .cardLink .cardTitle {
+.cardsContainer article .cardLink .cardTitle {
   width: 120px;
   position: relative;
   inset: 14em 0 0 1em;
@@ -119,7 +123,29 @@ header nav .about:hover {
   text-overflow: ellipsis;
   color: #FFFFFF;
 }
-.cardsContainer .cardLink .cardTitle:hover {
+.cardsContainer article .cardLink .cardTitle:hover {
   text-overflow: none;
   overflow: initial;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 8em;
+  background: #000000;
+  gap: 1em;
+}
+.footer .footerLogo {
+  width: 60px;
+}
+.footer .footerCopyRights {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 1em;
 }/*# sourceMappingURL=App.css.map */

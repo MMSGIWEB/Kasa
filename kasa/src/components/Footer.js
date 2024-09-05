@@ -1,9 +1,10 @@
 import React from "react";
 
-function Footer () {
+function Footer ({img, copyRights}) {
     return(
-        <div>
-            footer
+        <div className="footer">
+            <img src={img} className="footerLogo"/>
+            <h3 className="footerCopyRights">{copyRights}</h3>
         </div>
     )
 }
