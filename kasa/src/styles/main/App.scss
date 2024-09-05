@@ -13,7 +13,7 @@
 body {
     padding: 1em 2em;
     box-sizing: border-box;
-
+    min-width: 590px;
 }
 
 img {
@@ -27,7 +27,6 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 4em;
-    border: 1.5px solid red;
 }
 
 
@@ -36,3 +35,4 @@ main {
 @import '../layouts/banner';
 @import '../partials/cards';
 @import '../layouts/footer';
+@import '../media/media';

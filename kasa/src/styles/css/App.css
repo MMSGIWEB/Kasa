@@ -13,6 +13,7 @@
 body {
   padding: 1em 2em;
   box-sizing: border-box;
+  min-width: 590px;
 }
 
 img {
@@ -26,7 +27,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 4em;
-  border: 1.5px solid red;
 }
 
 header {
@@ -106,18 +106,19 @@ header nav .about:hover {
   display: flex;
   width: 100%;
   border-radius: 10px;
-  height: 270px;
 }
 .cardsContainer article .cardLink .card {
   overflow: hidden;
 }
 .cardsContainer article .cardLink .card .cardImg {
-  height: 100%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
 }
 .cardsContainer article .cardLink .card .cardTitle {
   position: relative;
   width: 80%;
-  bottom: 4.5em;
+  bottom: 3.5em;
   left: 1em;
   line-height: 21px;
   font-family: Montserrat;
@@ -125,11 +126,6 @@ header nav .about:hover {
   font-weight: 700;
   text-align: left;
   color: #FFFFFF;
-  justify-self: center;
-}
-.cardsContainer article .cardLink .card .cardTitle:hover {
-  text-overflow: none;
-  overflow: initial;
 }
 
 .footer {
@@ -152,4 +148,30 @@ header nav .about:hover {
   text-align: center;
   color: #FFFFFF;
   padding-bottom: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  /*barre de navigation*/
+  .navbar .logo {
+    width: 40%;
+  }
+  .navbar .navigation {
+    gap: 2em;
+  }
+  .navbar .navigation a {
+    font-size: 1.6em;
+  }
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardsContainer article, .cardsContainer .card {
+    width: 100%;
+  }
+  .footer {
+    height: 300px;
+    margin: 0 -2em -1em -2em;
+  }
 }/*# sourceMappingURL=App.css.map */

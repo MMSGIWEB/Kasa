@@ -1,0 +1,31 @@
+@import '../details/mixin';
+
+@media screen and (max-width: 900px) {
+    /*barre de navigation*/
+    .navbar{
+        .logo {
+            width: 40%;
+        }
+
+        .navigation {
+            gap: 2em;
+
+            a {
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .cardsContainer {
+        @include flexCCC;
+
+        article, .card {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        height: 300px;
+        margin: 0 -2em -1em -2em;
+    }
+}
