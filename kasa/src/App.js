@@ -9,10 +9,14 @@ import Error from '../src/pages/Error';
 
 function App() {
   return (
-      <Home/>
-      // <Fiche/>,
-      // <About/>,
-      // <Error/>
-  )}
+    <>
+      <Home />
+      {/* <Fiche /> */}
+      {/* <About/> */}
+      {/* <Error /> */}
+    </>
+
+  )
+}
 
 export default App;
