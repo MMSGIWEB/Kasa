@@ -9,3 +9,9 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@mixin flexEndC {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
