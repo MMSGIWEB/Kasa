@@ -20,8 +20,7 @@ const router = createBrowserRouter([
     errorElement: 
     <>
     <Navbar />
-    <h2>404</h2>
-    <Footer />
+    <Error />
     </>
 
   },
@@ -31,7 +30,6 @@ const router = createBrowserRouter([
     <>
     <Navbar />
     <h2>A propos</h2>
-    <Footer />
     </>
   },
   {
@@ -40,7 +38,6 @@ const router = createBrowserRouter([
     <>
     <Navbar />
     <h2>fiche logement</h2>
-    <Footer />
     </>
   },
 ])

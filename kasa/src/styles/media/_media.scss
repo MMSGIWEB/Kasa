@@ -44,4 +44,16 @@
             text-wrap: wrap;
         }
     }
+
+    /****Page 404****/
+    .errorPageContainer {
+        img {
+            width: 50%;
+        }
+        p {
+            font-size: 2em;
+            text-wrap: wrap;
+            padding: 3em 6em;
+        }
+    }
 }
