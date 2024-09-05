@@ -15,32 +15,38 @@
 
 
     article {
-        width: 30%;
+        width: 27%;
 
         .cardLink {
             display: flex;
-            background: linear-gradient(orange, red);
-            opacity: .4;
             width: 100%;
             border-radius: 10px;
-            height: 350px;
+            height:270px;
 
-            .cardTitle {
-                width: 120px;
-                position: relative;
-                inset: 14em 0 0 1em;
-                text-wrap: wrap;
-                font-family: Montserrat;
-                font-size: 18px;
-                font-weight: 700;
-                text-align: left;
+            .card {
                 overflow: hidden;
-                text-overflow: ellipsis;
-                color: #FFFFFF;
 
-                &:hover {
-                    text-overflow: none;
-                    overflow: initial;
+                .cardImg {
+                    height: 100%;
+                }
+    
+                .cardTitle {
+                    position: relative;
+                    width: 80%;
+                    bottom: 4.5em;
+                    left: 1em;
+                    line-height: 21px;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-align: left;
+                    color: #FFFFFF;
+                    justify-self: center;
+    
+                    &:hover {
+                        text-overflow: none;
+                        overflow: initial;
+                    }
                 }
             }
         }

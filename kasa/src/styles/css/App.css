@@ -100,30 +100,34 @@ header nav .about:hover {
   padding: 3em 1em;
 }
 .cardsContainer article {
-  width: 30%;
+  width: 27%;
 }
 .cardsContainer article .cardLink {
   display: flex;
-  background: linear-gradient(orange, red);
-  opacity: 0.4;
   width: 100%;
   border-radius: 10px;
-  height: 350px;
+  height: 270px;
 }
-.cardsContainer article .cardLink .cardTitle {
-  width: 120px;
+.cardsContainer article .cardLink .card {
+  overflow: hidden;
+}
+.cardsContainer article .cardLink .card .cardImg {
+  height: 100%;
+}
+.cardsContainer article .cardLink .card .cardTitle {
   position: relative;
-  inset: 14em 0 0 1em;
-  text-wrap: wrap;
+  width: 80%;
+  bottom: 4.5em;
+  left: 1em;
+  line-height: 21px;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
   text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: #FFFFFF;
+  justify-self: center;
 }
-.cardsContainer article .cardLink .cardTitle:hover {
+.cardsContainer article .cardLink .card .cardTitle:hover {
   text-overflow: none;
   overflow: initial;
 }
