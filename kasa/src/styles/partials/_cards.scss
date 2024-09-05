@@ -25,9 +25,10 @@
 
             .card {
                 overflow: hidden;
+                width: 100%;
 
                 .cardImg {
-                    height: 300px;
+                    height: 400px;
                     border-radius: 10px;
                     box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.15);
                 }
@@ -36,10 +37,10 @@
                     position: relative;
                     width: 80%;
                     bottom: 3.5em;
-                    left: 1em;
+                    left: 1.2em;
                     line-height: 21px;
                     font-family: Montserrat;
-                    font-size: 18px;
+                    font-size: 1.5em;
                     font-weight: 700;
                     text-align: left;
                     color: #FFFFFF;

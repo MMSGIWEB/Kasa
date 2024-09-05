@@ -109,9 +109,10 @@ header nav .about:hover {
 }
 .cardsContainer article .cardLink .card {
   overflow: hidden;
+  width: 100%;
 }
 .cardsContainer article .cardLink .card .cardImg {
-  height: 300px;
+  height: 400px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
 }
@@ -119,10 +120,10 @@ header nav .about:hover {
   position: relative;
   width: 80%;
   bottom: 3.5em;
-  left: 1em;
+  left: 1.2em;
   line-height: 21px;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 1.5em;
   font-weight: 700;
   text-align: left;
   color: #FFFFFF;
@@ -171,7 +172,19 @@ header nav .about:hover {
     width: 100%;
   }
   .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 300px;
     margin: 0 -2em -1em -2em;
+  }
+  .footer .footerLogo {
+    width: 22%;
+  }
+  .footer .footerCopyRights {
+    width: 160px;
+    font-size: 1.1em;
+    text-wrap: wrap;
   }
 }/*# sourceMappingURL=App.css.map */
