@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     element: 
     <>
     <Navbar />
-    <h2>A propos</h2>
+    <About />
     </>
   },
   {
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     element:
     <>
     <Navbar />
-    <h2>fiche logement</h2>
+    <Fiche />
     </>
   },
 ])
