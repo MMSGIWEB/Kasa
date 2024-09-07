@@ -335,6 +335,11 @@ header nav div:active {
     height: 100%;
   }
 }
+.collapses,
+.under {
+  width: 100%;
+}
+
 .collapseContent {
   box-sizing: border-box;
   width: 45%;

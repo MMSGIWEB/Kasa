@@ -1,5 +1,6 @@
 import React from "react";
 import Collapse from "./Collapse";
+import Rating from "./Rating";
 import appts from "../datas/logements.json"
 
 function ApptInfo({title, location, userName, userPic, star, description, equipements}) {
@@ -25,7 +26,7 @@ function ApptInfo({title, location, userName, userPic, star, description, equipe
                             </div>
                         </div>
                         <div className="rating">
-                            <span className="rate">{star}</span>
+                            <Rating />
                         </div>
                     </div>
                 </div>

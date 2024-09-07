@@ -17,11 +17,11 @@ function Fiche() {
             <main className="ficheContent">
                 <Slideshow />
                 {/* c'est ici que je dois utiliser map() avec appts ?*/}
-                {/* <ApptInfo
+                <ApptInfo
                     apptTitle={appts.title}
                     location={appts.location}
                     userName={appts.name}
-                    userPicture={appts.picture} /> */}
+                    userPicture={appts.picture} />
             </main>
             <Footer img={footerLogo} copyRights={"© 2020 Kasa. All rights reserved"} />
         </>
