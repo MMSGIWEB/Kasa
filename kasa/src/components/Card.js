@@ -1,6 +1,4 @@
 import React from "react";
-import logts from "../datas/logements.json"
-import Logements from "./Logements";
 import { NavLink } from "react-router-dom";
 
 

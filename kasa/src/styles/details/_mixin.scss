@@ -22,3 +22,19 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin flexRowSB {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+}

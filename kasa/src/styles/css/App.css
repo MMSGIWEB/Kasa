@@ -13,6 +13,7 @@
 body {
   box-sizing: border-box;
   min-width: 590px;
+  margin: 0;
 }
 
 img {
@@ -26,7 +27,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 4em;
-  padding: 0 2em;
+  padding: 1em 4em;
 }
 
 header {
@@ -34,7 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5em 2em 0 2em;
+  padding: 1.5em 0 0 0;
 }
 header .logo {
   width: 10%;
@@ -50,6 +51,7 @@ header nav div {
   color: #000000;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  text-wrap: nowrap;
 }
 header nav div:active {
   text-decoration: underline;
@@ -58,6 +60,7 @@ header nav div:active {
 .banner {
   position: relative;
   min-height: 180px;
+  height: 230px;
   border-radius: 25px;
   width: 100%;
   min-width: 516px;
@@ -175,6 +178,202 @@ header nav div:active {
   color: #000000;
 }
 
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.aboutContent .banner {
+  background-image: url("/src/assets/images/banner/Image2.png");
+  width: 100%;
+}
+.aboutContent .collapses {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.aboutContent .collapses .collapseContent {
+  width: 100%;
+}
+.aboutContent .collapses .collapseContent .descrip {
+  opacity: 0;
+}
+
+.infoBanner,
+.infoBanner,
+.infoContent,
+.infoBanner .titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ficheContent {
+  width: 90%;
+  gap: 0.7em;
+}
+.ficheContent .infoBanner {
+  height: 400px;
+  position: relative;
+  border-radius: 25px;
+  width: 100%;
+}
+.ficheContent .infoBanner img {
+  position: absolute;
+  height: 100%;
+  border-radius: 25px;
+  z-index: -1;
+}
+.ficheContent .infoBanner .arrow {
+  position: absolute;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 3.5em;
+}
+.ficheContent .infoBanner .arrowLeft {
+  left: 10px;
+}
+.ficheContent .infoBanner .arrowRight {
+  right: 10px;
+}
+.ficheContent .infoContent {
+  width: 100%;
+}
+.ficheContent .infoContent .infoHeader {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3em;
+}
+.ficheContent .infoContent .infoHeader .titleContent {
+  width: 50%;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+.ficheContent .infoContent .infoHeader .titleContent .titles {
+  display: flex;
+  flex-direction: column;
+}
+.ficheContent .infoContent .infoHeader .titleContent .titles h1 {
+  font-size: 36px;
+  line-height: 51.34px;
+  color: #FF6060;
+  margin: 0;
+}
+.ficheContent .infoContent .infoHeader .titleContent .titles p {
+  font-size: 18px;
+  margin: 0;
+}
+.ficheContent .infoContent .infoHeader .titleContent .tags {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.ficheContent .infoContent .infoHeader .titleContent .tags p {
+  background: #FF6060;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 0.1em 2em;
+}
+.ficheContent .infoContent .infoHeader .userContent {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.ficheContent .infoContent .infoHeader .userContent .userInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.7em;
+}
+.ficheContent .infoContent .infoHeader .userContent .userInfo .userName {
+  color: #FF6060;
+  font-size: 18px;
+  text-wrap: wrap;
+  width: 100px;
+}
+.ficheContent .infoContent .infoHeader .userContent .userInfo .userPic {
+  border-radius: 100%;
+  width: 36%;
+  background-position: center;
+}
+.ficheContent .infoContent .infoHeader .userContent .userInfo .userPic img {
+  border-radius: 100%;
+  height: 80px;
+}
+.ficheContent .infoContent .details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3em;
+}
+
+.collapseContent {
+  box-sizing: border-box;
+  width: 45%;
+  height: 200px;
+}
+.collapseContent .collapseTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #FF6060;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 0 1em;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 0.7em;
+  color: #FFFFFF;
+}
+.collapseContent .collapseTitle .rollDown:active + .descrip {
+  transform: translateY(0);
+  opacity: 1;
+}
+.collapseContent .collapseTitle .rollDown i {
+  font-size: 2.2em;
+}
+.collapseContent .descrip {
+  padding: 16px;
+  background: #F6F6F6;
+  position: relative;
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 1.5s;
+  animation-duration: 2s;
+  transform: translateY(-140px);
+  z-index: -1;
+}
+.collapseContent .descrip p {
+  overflow-wrap: break-word;
+  overflow: scroll;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 900px) {
   /*barre de navigation*/
   .navbar {
@@ -225,4 +424,5 @@ header nav div:active {
     text-wrap: wrap;
     padding: 3em 6em;
   }
+  /*****fiche logement******/
 }/*# sourceMappingURL=App.css.map */
