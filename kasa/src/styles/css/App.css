@@ -235,6 +235,7 @@ header nav div:active {
   background: transparent;
   color: #FFFFFF;
   font-size: 3.5em;
+  border: none;
 }
 .ficheContent .infoBanner .arrowLeft {
   left: 10px;
@@ -324,10 +325,21 @@ header nav div:active {
   gap: 3em;
 }
 
+@keyframes slideShow {
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
 .collapseContent {
   box-sizing: border-box;
   width: 45%;
-  height: 200px;
+  height: 270px;
+  overflow: hidden;
 }
 .collapseContent .collapseTitle {
   display: flex;
@@ -343,25 +355,32 @@ header nav div:active {
   font-size: 0.7em;
   color: #FFFFFF;
 }
-.collapseContent .collapseTitle .rollDown:active + .descrip {
-  transform: translateY(0);
-  opacity: 1;
+.collapseContent .collapseTitle .slideDown {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  transform: rotateY(180deg);
+  z-index: 1;
 }
-.collapseContent .collapseTitle .rollDown i {
+.collapseContent .collapseTitle .slideDown i {
   font-size: 2.2em;
+  position: absolute;
+}
+.collapseContent .collapseTitle .slideDown .fa-chevron-down {
+  z-index: -1;
+  opacity: 0;
 }
 .collapseContent .descrip {
   padding: 16px;
   background: #F6F6F6;
   position: relative;
   width: 100%;
-  height: 80%;
   box-sizing: border-box;
-  opacity: 0;
-  transition: all 1.5s;
-  animation-duration: 2s;
-  transform: translateY(-140px);
-  z-index: -1;
+  transition: all 4s;
+  animation-duration: 3s;
+  animation-name: slideShow;
 }
 .collapseContent .descrip p {
   overflow-wrap: break-word;

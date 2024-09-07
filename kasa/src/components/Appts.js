@@ -10,7 +10,7 @@ function Logements() {
             {appts.map((appt) => {
                 return (
                     <article key={appt.id}>
-                        <Card cardLink={'#'} img={appt.cover} title={appt.title} />
+                        <Card img={appt.cover} title={appt.title} />
                     </article>
                 )
             })}

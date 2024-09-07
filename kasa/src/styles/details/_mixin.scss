@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+@mixin flexsc {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 @mixin flexSaC {
     display: flex;
     justify-content: space-around;
