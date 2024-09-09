@@ -1,22 +1,12 @@
 import React from "react";
 import Card from "./Card";
-import appts from "../datas/logements.json";
 
-function Logements() {
-    console.log(appts)
-    //itération de la liste d'appartements
+function Appts() {
     return (
         <div className="cardsContainer">
-            {appts.map((appt) => {
-                return (
-                    <article key={appt.id}>
-                        <Card img={appt.cover} title={appt.title} />
-                    </article>
-                )
-            })}
-
+            <Card />
         </div>
     )
 }
 
-export default Logements;
+export default Appts;

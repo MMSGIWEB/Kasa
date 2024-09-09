@@ -10,7 +10,7 @@
 
 .ficheContent {
     width: 90%;
-    gap: .7em;
+    gap: 1.2em;
 
     .infoBanner {
         height: 400px;
@@ -53,20 +53,23 @@
             gap: 3em;
 
             .titleContent {
-                width: 50%;
+                width: 100%;
                 text-align: left;
                 font-family: Montserrat;
                 font-weight: 500;
-                @include flexColumn;
+                display: flex;
+                flex-direction: column;
 
                 .titles {
                     @include flexColumn;
+                    gap: .7em;
 
                     h1 {
-                        font-size: 36px;
-                        line-height: 51.34px;
+                        font-size: 2em;
+                        line-height: 35.34px;
                         color: #FF6060;
                         margin: 0;
+                        font-weight: 500;
                     }
 
                     p {
@@ -79,37 +82,46 @@
                     @include flexRow;
                     gap: 1em;
 
-                    p {
+                    .tag {
                         background: #FF6060;
                         border-radius: 10px;
+                        font-size: .8em;
                         font-family: Montserrat;
-                        font-weight: 700;
+                        font-weight: 600;
                         color: #FFFFFF;
-                        padding: .1em 2em;
+                        padding: 0.1em 2em;
+
                     }
                 }
             }
 
             .userContent {
                 width: 50%;
-                @include flexEndC;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                flex-direction: column;
+                height: 100%;
+                gap: 1.1em;
 
                 .userInfo {
                     @include flexRow;
                     justify-content: flex-end;
                     align-items: center;
                     gap: .7em;
+                    width: 100%;
 
                     .userName {
                         color: #FF6060;
                         font-size: 18px;
                         text-wrap: wrap;
                         width: 100px;
+                        font-weight: 500;
                     }
 
                     .userPic {
                         border-radius: 100%;
-                        width: 36%;
+                        width: 18%;
                         background-position: center;
 
                         img {
@@ -117,6 +129,17 @@
                             height: 80px;
                         }
                     }
+                }
+
+                .rating {
+                    @include flexEndC;
+                    width: 100%;
+
+                    .ratingContent {
+                        @include flexSaC;
+
+                    }
+
                 }
 
             }

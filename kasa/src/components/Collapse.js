@@ -1,6 +1,6 @@
 import React from "react";
 
-function Collapse({appt}) {
+function Collapse({title, content}) {
     //pour ouvrir le collapse
     // const [isClosed, openCollapse] = useState(false)
     //pour le fermer [v actuelle, v permettant de la modif]
@@ -10,7 +10,7 @@ function Collapse({appt}) {
         <>
             <article className="collapseContent">
                 <div className="collapseTitle">
-                    <h2>{appt}</h2>
+                    <h2>{title}</h2>
                     <div className="slideDown">
                         <i className="fa-solid fa-chevron-up"></i>
                         {/* <i className="fa-solid fa-chevron-up" onClick={() => openCollapse(false)}></i> */}
@@ -19,7 +19,7 @@ function Collapse({appt}) {
                 </div>
                 {/* utiliser le map ou useState? */}
                 <div className="descrip">
-                    <p>{appt}</p>
+                    <div className="descripContent">{content}</div>
                 </div>
             </article>
         </>
