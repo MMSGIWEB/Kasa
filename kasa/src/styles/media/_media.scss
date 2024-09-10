@@ -11,10 +11,10 @@
 
         .navigation {
             gap: 2em;
-            padding-right: 2.5em;
+            padding-right: 2.2em;
 
-            a {
-                font-size: 1.6em;
+            .link {
+                font-size: 2em;
             }
         }
     }
@@ -58,15 +58,56 @@
     }
 
     /*****fiche logement******/
-    // .details {
-        // flex-direction: column;
-    // }
-    // .infoHeader {
-    //     @include flexColumn;
-    // }
+    .infoHeader, .details {
+        flex-direction: column;
+        gap: 0!important;
+    }
 
-    // .details {
-    //     @include flexColumn;
+    .infoHeader {
 
-    // }
+        .titleContent {
+            gap: 1em;
+
+            .titles {
+                
+                h1 {
+                    padding-bottom: .2em;
+                    font-size: 2.8em!important;
+                }
+
+                p {
+                    font-size: 28px!important;
+                }
+            }
+
+            .tags {
+                width: 100%;
+            }
+        }
+
+        .userContent {
+            flex-direction: row-reverse!important;
+            justify-content: space-between!important;
+            align-items: center!important;
+
+            .userPic {
+                width: 24%!important;
+            }
+
+            .rating {
+                // height: 100%;
+                justify-content: flex-start!important;
+                // align-items: flex-end!important;
+            }
+        }
+    }
+
+    .details {
+        flex-direction: column!important;
+
+        .collapseContent {
+            width: 100%;
+        }
+    }
+
 }

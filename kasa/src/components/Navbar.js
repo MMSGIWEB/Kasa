@@ -10,10 +10,10 @@ function Navbar() {
                 <img src={logo} alt="logo kasa" />
             </div>
             <nav className="navigation" >
-                <NavLink to="/">
+                <NavLink to="/" className="link indexLink">
                     <div className="index" >Accueil</div>
                 </NavLink>
-                <NavLink to="/about">
+                <NavLink to="/about" className="link aboutLink">
                     <div className="about" >A Propos</div>
                 </NavLink>
             </nav>
