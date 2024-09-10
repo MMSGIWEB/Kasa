@@ -22,9 +22,7 @@ function ApptInfo() {
     //equipments
     const equipments = logement?.equipments.map((equipment, i) => {
         return (
-          <ul key={i}>
-            <li>{equipment}</li>
-          </ul>
+            <li key={i}>{equipment}</li>
         );
       });
 
@@ -54,7 +52,7 @@ function ApptInfo() {
                 {/* ici appts.map */}
                 <div className="details">
                     <Collapse title={'Description'} content={logement?.description} />
-                    <Collapse title={'Équipements'} content={equipments} />
+                    <Collapse title={'Équipements'} content={<ul>{equipments}</ul>} />
                 </div>
             </section>
         </>

@@ -388,7 +388,6 @@ header nav a.active {
 .collapseContent {
   box-sizing: border-box;
   width: 45%;
-  height: 270px;
   overflow: hidden;
 }
 .collapseContent .collapseTitle {
@@ -406,17 +405,16 @@ header nav a.active {
   color: #FFFFFF;
 }
 .collapseContent .collapseTitle .slideDown {
+  position: relative;
+  right: 3em;
   display: flex;
   justify-content: start;
   align-items: center;
-  animation-delay: 2s;
-  animation-duration: 3s;
-  transform: rotateY(180deg);
-  z-index: 1;
 }
 .collapseContent .collapseTitle .slideDown i {
   font-size: 2.2em;
   position: absolute;
+  cursor: pointer;
 }
 .collapseContent .collapseTitle .slideDown .fa-chevron-down {
   z-index: -1;
@@ -431,7 +429,6 @@ header nav a.active {
   box-sizing: border-box;
   transition: all 4s;
   animation-duration: 3s;
-  animation-name: slideShow;
 }
 .collapseContent .descrip .descripContent {
   overflow-wrap: break-word;
@@ -462,10 +459,9 @@ header nav a.active {
   }
   .navbar .navigation {
     gap: 2em;
-    padding-right: 2.2em;
   }
   .navbar .navigation .link {
-    font-size: 2em;
+    font-size: 1.2em;
   }
   .cardsContainer {
     display: flex;

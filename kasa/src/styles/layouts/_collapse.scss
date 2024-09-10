@@ -10,7 +10,6 @@
 .collapseContent {
     box-sizing: border-box;
     width: 45%;
-    height: 270px;
     overflow: hidden;
 
     .collapseTitle {
@@ -27,16 +26,14 @@
         color: #FFFFFF;
 
         .slideDown {
+            position: relative;
+            right: 3em;
             @include flexsc;
-            // &:active: ;
-            animation-delay: 2s;
-            animation-duration: 3s;
-            transform: rotateY(180deg);
-            z-index: 1;
 
             i {
                 font-size: 2.2em;
                 position: absolute;
+                cursor: pointer;
             }
 
             .fa-chevron-down {
@@ -50,14 +47,11 @@
         padding: 20px;
         background: #F6F6F6;
         position: relative;
-        // bottom: 210px;
         width: 100%;
         height: 250px;
         box-sizing: border-box;
-        // opacity: 0;
         transition: all 4s;
         animation-duration: 3s;
-        animation-name: slideShow;
 
         .descripContent {
             overflow-wrap: break-word;
