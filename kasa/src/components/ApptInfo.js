@@ -6,7 +6,7 @@ import Host from "./fiche/Host";
 import appts from "../datas/logements.json"
 import { useParams } from "react-router-dom";
 
-function ApptInfo({title, location, description, equipements}) {
+function ApptInfo() {
     //récup de l'id de la fiche concernée
     const {id} = useParams()
     //fait correspondre l'id à celui du logement

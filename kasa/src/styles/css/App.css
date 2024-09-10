@@ -27,7 +27,10 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 4em;
-  padding: 1em 4em;
+}
+
+.index {
+  padding: 0 4em;
 }
 
 header {
@@ -47,14 +50,30 @@ header nav {
   gap: 3.5em;
   padding-right: 5em;
 }
-header nav div {
+header nav .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .link:active {
+  text-decoration: underline;
+  color: #000000;
+}
+header nav .link:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+header nav .link div {
   color: #000000;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-wrap: nowrap;
+  padding: 1em 0 0 0;
+  font-size: 1.5em;
 }
-header nav div:active {
+header nav a.active {
   text-decoration: underline;
+  color: #000000;
 }
 
 .banner {
@@ -248,6 +267,7 @@ header nav div:active {
 .ficheContent .infoContent {
   width: 100%;
   gap: 1em;
+  padding: 0;
 }
 .ficheContent .infoContent .infoHeader {
   width: 100%;
@@ -488,6 +508,7 @@ header nav div:active {
   .infoHeader .titleContent .titles h1 {
     padding-bottom: 0.2em;
     font-size: 2.8em !important;
+    line-height: 55.34px !important;
   }
   .infoHeader .titleContent .titles p {
     font-size: 28px !important;

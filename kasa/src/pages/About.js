@@ -14,7 +14,7 @@ function About() {
             <main className="aboutContent">
                 <Banner text={""} />
                 <section className="collapses">
-                    {collapseData.map((collapse, index) => {
+                    {collapseData.map((collapse) => {
                         return (
                             <div key={collapse.id} className="under">
                                 <Collapse title={collapse.title} content={collapse.content} />
