@@ -1,5 +1,5 @@
 import React from "react";
-import Collapse from "./Collapse";
+import Collapse from "./collapse/Collapse";
 import Rating from "./Rating";
 import Tags from "./fiche/Tags";
 import Host from "./fiche/Host";

@@ -1,11 +1,19 @@
-@keyframes slideShow {
+@keyframes slideOut {
     0% {
-        // opacity: 1;
-        height: 0%;
+        transform: translateY(-100%);
     }
 
     100% {
-        // opacity: 1;
-        height: 100%;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
     }
 }

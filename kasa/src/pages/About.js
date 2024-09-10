@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import footerLogo from "../assets/images/logo/logo-white.png";
 import Banner from "../components/Banner";
-import Collapse from "../components/Collapse";
+import Collapse from "../components/collapse/Collapse";
 import Navbar from "../components/Navbar";
 import collapseData from "../datas/aboutList.json";
 
