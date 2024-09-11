@@ -15,9 +15,10 @@ function Collapse({ title, content }) {
             <article className="collapseContent">
                 <div className="collapseTitle">
                     <h2>{title}</h2>
-                    <div className="slideDown">
-                        {/* utiliser rotate? */}
-                        <i className="fa-solid fa-chevron-up" onClick={openDescrip}></i>
+                    <div className="slideDown" onClick={openDescrip}>
+                        {/* les chevrons se remplacent selon l'état */}
+                        {isOpened ? (<i className="fa-solid fa-chevron-up" ></i>) 
+                        : (<i className="fa-solid fa-chevron-down" ></i>)}
                     </div>
                 </div>
                 {isOpened && <div className="descrip">
