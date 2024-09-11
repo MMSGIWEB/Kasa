@@ -1,9 +1,9 @@
 import React from "react";
 import footerLogo from "../assets/images/logo/logo-white.png";
-import Footer from "../components/Footer";
-import ErrorContent from "../components/ErrorContent";
+import Footer from "../components/footer/Footer";
+import ErrorContent from "../components/error/ErrorContent";
 import imgError from "../assets/images/error/error.png"
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar/Navbar";
 
 function Error() {
     return (

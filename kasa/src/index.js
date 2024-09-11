@@ -8,9 +8,6 @@ import App from './App';
 import Error from '../src/pages/Error';
 import Fiche from './pages/Fiche';
 import About from './pages/About';
-import Navbar from './components/Navbar';
-import appts from './datas/logements.json'
-
 
 
 //on définit root comme racine

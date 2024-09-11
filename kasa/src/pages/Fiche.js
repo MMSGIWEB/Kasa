@@ -1,10 +1,9 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 import footerLogo from "../assets/images/logo/logo-white.png"
 import Slideshow from "../components/fiche/Slideshow";
-import ApptInfo from "../components/ApptInfo";
-import appts from "../datas/logements.json";
-import Navbar from "../components/Navbar";
+import ApptInfo from "../components/fiche/ApptInfo";
+import Navbar from "../components/navbar/Navbar";
 
 
 function Fiche() {

@@ -1,9 +1,9 @@
 import React from "react";
-import Collapse from "./collapse/Collapse";
+import Collapse from "../collapse/Collapse";
 import Rating from "./Rating";
-import Tags from "./fiche/Tags";
-import Host from "./fiche/Host";
-import appts from "../datas/logements.json"
+import Tags from "./Tags";
+import Host from "./Host";
+import appts from "../../datas/logements.json"
 import { useParams } from "react-router-dom";
 
 function ApptInfo() {

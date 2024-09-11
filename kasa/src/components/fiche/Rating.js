@@ -1,6 +1,6 @@
 import React from "react";
-import fullStar from "../assets/images/rate/star-active.png"
-import emptyStar from "../assets/images/rate/star-inactive.png"
+import fullStar from "../../assets/images/rate/star-active.png"
+import emptyStar from "../../assets/images/rate/star-inactive.png"
 
 function Rating(props) {
     const scaleRating = props.scaleRating

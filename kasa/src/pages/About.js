@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 import footerLogo from "../assets/images/logo/logo-white.png";
-import Banner from "../components/Banner";
+import Banner from "../components/banner/Banner";
 import Collapse from "../components/collapse/Collapse";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar/Navbar";
 import collapseData from "../datas/aboutList.json";
 
 
