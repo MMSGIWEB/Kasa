@@ -14,15 +14,16 @@ function About() {
             <main className="aboutContent">
                 <Banner text={""} />
                 <section className="collapses">
-                    {collapseData.map((collapse) => {
+
+                    {collapseData.map((police) => {
                         return (
-                            <div key={collapse.id} className="under">
-                                <Collapse title={collapse.title} content={collapse.content} />
+                            <div key={police.id} className="under">
+                                <Collapse title={police.title} content={police.content} />
                             </div>
                         )
                     })}
-            </section>
-        </main >
+                </section>
+            </main >
             <Footer img={footerLogo} copyRights={"© 2020 Kasa. All rights reserved"} />
         </>
     )
