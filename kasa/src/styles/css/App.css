@@ -206,6 +206,9 @@ header nav a.active {
   background-image: url("/src/assets/images/banner/Image2.png");
   width: 100%;
 }
+.aboutContent .banner h1 {
+  color: transparent;
+}
 .aboutContent .collapses {
   max-width: 1000px;
   display: flex;
@@ -259,9 +262,10 @@ header nav a.active {
   -webkit-background-clip: text;
           background-clip: text;
   background: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 3.5em;
   border: none;
+  cursor: pointer;
 }
 .ficheContent .infoBanner .arrowLeft {
   left: 10px;
@@ -298,7 +302,7 @@ header nav a.active {
 .ficheContent .infoContent .infoHeader .titleContent .titles h1 {
   font-size: 2.3em;
   line-height: 35.34px;
-  color: #FF6060;
+  color: #ff6060;
   margin: 0;
   font-weight: 500;
 }
@@ -312,12 +316,12 @@ header nav a.active {
   gap: 1em;
 }
 .ficheContent .infoContent .infoHeader .titleContent .tags .tag {
-  background: #FF6060;
+  background: #ff6060;
   border-radius: 7px;
   font-size: 0.8em;
   font-family: Montserrat;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0.5em 2.2em 0.4em 2.2em;
 }
 .ficheContent .infoContent .infoHeader .userContent {
@@ -338,7 +342,7 @@ header nav a.active {
   width: 100%;
 }
 .ficheContent .infoContent .infoHeader .userContent .userInfo .userName {
-  color: #FF6060;
+  color: #ff6060;
   font-family: "Montserrat";
   font-size: 25px;
   text-wrap: wrap;
@@ -437,7 +441,6 @@ header nav a.active {
 }
 .collapseContent .descrip .descripContent {
   overflow-wrap: break-word;
-  overflow: scroll;
   font-size: 1.4em;
   font-weight: 500;
   width: 90%;

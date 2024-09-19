@@ -1,167 +1,163 @@
-@import '../details/mixin';
+@import "../details/mixin";
 
 .infoBanner,
 .infoBanner,
 .infoContent,
 .infoBanner .titles {
-    @include flexCCC;
+  @include flexCCC;
 }
-
 
 .ficheContent {
-    width: 90%;
-    gap: 1.2em;
+  width: 90%;
+  gap: 1.2em;
 
-    .infoBanner {
+  .infoBanner {
+    height: 550px;
+    position: relative;
+    border-radius: 25px;
+    width: 100%;
 
-        height: 550px;
-        position: relative;
-        border-radius: 25px;
-        width: 100%;
+    img {
+      position: absolute;
+      height: 100%;
+      border-radius: 25px;
+      z-index: -1;
+      object-position: center;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
 
-        img {
-            position: absolute;
-            height: 100%;
-            border-radius: 25px;
-            z-index: -1;
-            object-position: center;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-
-            &.currentImg {
-                opacity: 1;
-            }
-        }
-
-        .arrow {
-            position: absolute;
-            background-clip: text;
-            background: transparent;
-            color: #FFFFFF;
-            font-size: 3.5em;
-            border: none;
-        }
-
-        .arrowLeft {
-            left: 10px;
-        }
-
-        .arrowRight {
-            right: 10px;
-        }
+      &.currentImg {
+        opacity: 1;
+      }
     }
 
-    .infoContent {
-        width: 100%;
-        gap: 1em;
-        padding: 0;
-
-        .infoHeader {
-            width: 100%;
-            text-align: right;
-            @include flexSB;
-            gap: 3em;
-
-            .titleContent {
-                width: 100%;
-                text-align: left;
-                font-family: Montserrat;
-                font-weight: 500;
-                display: flex;
-                flex-direction: column;
-
-                .titles {
-                    @include flexColumn;
-                    gap: .7em;
-                    padding-top: 1.5em;
-
-                    h1 {
-                        font-size: 2.3em;
-                        line-height: 35.34px;
-                        color: #FF6060;
-                        margin: 0;
-                        font-weight: 500;
-                    }
-
-                    p {
-                        font-size: 18px;
-                        margin: 0;
-                    }
-                }
-
-                .tags {
-                    @include flexRow;
-                    gap: 1em;
-
-                    .tag {
-                        background: #FF6060;
-                        border-radius: 7px;
-                        font-size: .8em;
-                        font-family: Montserrat;
-                        font-weight: 700;
-                        color: #FFFFFF;
-                        padding: 0.5em 2.2em 0.4em 2.2em;
-                    }
-                }
-            }
-
-            .userContent {
-                width: 100%;
-                display: flex;
-                justify-content: flex-end;
-                align-items: flex-start;
-                flex-direction: column;
-                height: 100%;
-                gap: 1.1em;
-
-                .userInfo {
-                    @include flexRow;
-                    justify-content: flex-end;
-                    align-items: center;
-                    gap: .7em;
-                    width: 100%;
-
-                    .userName {
-                        color: #FF6060;
-                        font-family: 'Montserrat';
-                        font-size: 25px;
-                        text-wrap: wrap;
-                        // width: 100px;
-                        font-weight: 500;
-                    }
-
-                    .userPic {
-                        border-radius: 100%;
-                        width: 15%;
-                        background-position: center;
-
-                        img {
-                            border-radius: 100%;
-                            height: 93px;
-                        }
-                    }
-                }
-
-                .rating {
-                    @include flexEndC;
-                    width: 100%;
-
-                    .ratingContent {
-                        @include flexSaC;
-
-                    }
-
-                }
-
-            }
-        }
-
-        .details {
-            width: 100%;
-            @include flexRowSB;
-            gap: 3em;
-        }
+    .arrow {
+      position: absolute;
+      background-clip: text;
+      background: transparent;
+      color: #ffffff;
+      font-size: 3.5em;
+      border: none;
+      cursor: pointer;
     }
+
+    .arrowLeft {
+      left: 10px;
+    }
+
+    .arrowRight {
+      right: 10px;
+    }
+  }
+
+  .infoContent {
+    width: 100%;
+    gap: 1em;
+    padding: 0;
+
+    .infoHeader {
+      width: 100%;
+      text-align: right;
+      @include flexSB;
+      gap: 3em;
+
+      .titleContent {
+        width: 100%;
+        text-align: left;
+        font-family: Montserrat;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+
+        .titles {
+          @include flexColumn;
+          gap: 0.7em;
+          padding-top: 1.5em;
+
+          h1 {
+            font-size: 2.3em;
+            line-height: 35.34px;
+            color: #ff6060;
+            margin: 0;
+            font-weight: 500;
+          }
+
+          p {
+            font-size: 18px;
+            margin: 0;
+          }
+        }
+
+        .tags {
+          @include flexRow;
+          gap: 1em;
+
+          .tag {
+            background: #ff6060;
+            border-radius: 7px;
+            font-size: 0.8em;
+            font-family: Montserrat;
+            font-weight: 700;
+            color: #ffffff;
+            padding: 0.5em 2.2em 0.4em 2.2em;
+          }
+        }
+      }
+
+      .userContent {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100%;
+        gap: 1.1em;
+
+        .userInfo {
+          @include flexRow;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 0.7em;
+          width: 100%;
+
+          .userName {
+            color: #ff6060;
+            font-family: "Montserrat";
+            font-size: 25px;
+            text-wrap: wrap;
+            // width: 100px;
+            font-weight: 500;
+          }
+
+          .userPic {
+            border-radius: 100%;
+            width: 15%;
+            background-position: center;
+
+            img {
+              border-radius: 100%;
+              height: 93px;
+            }
+          }
+        }
+
+        .rating {
+          @include flexEndC;
+          width: 100%;
+
+          .ratingContent {
+            @include flexSaC;
+          }
+        }
+      }
+    }
+
+    .details {
+      width: 100%;
+      @include flexRowSB;
+      gap: 3em;
+    }
+  }
 }
 
-@import '../layouts/collapse';
+@import "../layouts/collapse";
