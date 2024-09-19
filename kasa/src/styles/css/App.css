@@ -476,9 +476,10 @@ header nav a.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #FFFFFF;
+    background: #ffffff;
   }
-  .cardsContainer article, .cardsContainer .card {
+  .cardsContainer article,
+  .cardsContainer .card {
     width: 100%;
   }
   .footer {
@@ -507,7 +508,8 @@ header nav a.active {
     padding: 3em 6em;
   }
   /*****fiche logement******/
-  .infoHeader, .details {
+  .infoHeader,
+  .details {
     flex-direction: column;
     gap: 0 !important;
   }
@@ -538,6 +540,7 @@ header nav a.active {
   }
   .details {
     flex-direction: column !important;
+    gap: 2em !important;
   }
   .details .collapseContent {
     width: 100%;
