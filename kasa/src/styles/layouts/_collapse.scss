@@ -34,12 +34,6 @@
         position: absolute;
         cursor: pointer;
       }
-
-      // .fa-chevron-d {
-
-      //     z-index: -1;
-      //     opacity: 0;
-      // }
     }
   }
 
@@ -53,11 +47,6 @@
     top: -0.3rem;
     z-index: -1;
     animation: slideOut 0.5s ease-in-out;
-
-    // &.toClose {
-    //     // animation: slideIn 0.5s ease-in-out;
-
-    // }
 
     .descripContent {
       overflow-wrap: break-word;
