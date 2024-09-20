@@ -1,82 +1,80 @@
-@import '../details/mixin';
-@import '../keyframes/keyframes';
+@import "../details/mixin";
+@import "../keyframes/keyframes";
 
 .collapses,
 .under {
-    width: 100%;
-
+  width: 100%;
 }
 
 .collapseContent {
+  box-sizing: border-box;
+  width: 45%;
+  overflow: hidden;
+
+  .collapseTitle {
+    @include flexRow;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff6060;
+    border-radius: 10px;
     box-sizing: border-box;
-    width: 45%;
-    overflow: hidden;
+    padding: 0 1em;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 0.7em;
+    color: #ffffff;
 
-    .collapseTitle {
-        @include flexRow;
-        justify-content: space-between;
-        align-items: center;
-        background: #FF6060;
-        border-radius: 10px;
-        box-sizing: border-box;
-        padding: 0 1em;
-        font-family: Montserrat;
-        font-weight: 700;
-        font-size: .7em;
-        color: #FFFFFF;
+    .slideDown {
+      position: relative;
+      right: 3em;
+      @include flexsc;
 
-        .slideDown {
-            position: relative;
-            right: 3em;
-            @include flexsc;
+      i {
+        font-size: 2.2em;
+        position: absolute;
+        cursor: pointer;
+      }
 
+      // .fa-chevron-d {
 
-            i {
-                font-size: 2.2em;
-                position: absolute;
-                cursor: pointer;
-            }
-
-            // .fa-chevron-d {
-
-            //     z-index: -1;
-            //     opacity: 0;
-            // }
-        }
+      //     z-index: -1;
+      //     opacity: 0;
+      // }
     }
+  }
 
-    .descrip {
-        padding: 20px;
-        background: #F6F6F6;
-        position: relative;
-        width: 100%;
-        height: 250px;
-        box-sizing: border-box;
-        top: -0.3rem;
-        z-index: -1;
-        animation: slideOut 0.5s ease-in-out;
+  .descrip {
+    padding: 20px;
+    background: #f6f6f6;
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    box-sizing: border-box;
+    top: -0.3rem;
+    z-index: -1;
+    animation: slideOut 0.5s ease-in-out;
 
-        // &.toClose {
-        //     // animation: slideIn 0.5s ease-in-out;
+    // &.toClose {
+    //     // animation: slideIn 0.5s ease-in-out;
 
-        // }
+    // }
 
-        .descripContent {
-            overflow-wrap: break-word;
-            font-size: 1.4em;
-            font-weight: 500;
-            width: 90%;
-            height: 100%;
-            margin: 0;
-            box-sizing: border-box;
-            @include flexColumn;
-            gap: .2em;
+    .descripContent {
+      overflow-wrap: break-word;
+      font-size: 1.4em;
+      font-weight: 500;
+      width: 90%;
+      height: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      @include flexColumn;
+      gap: 0.2em;
 
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding-inline-start: 20px;
-            }
-        }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding-inline-start: 20px;
+      }
     }
+  }
 }
