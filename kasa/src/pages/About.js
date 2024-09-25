@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "../components/footer/Footer";
 import footerLogo from "../assets/images/logo/logo-white.png";
 import Banner from "../components/banner/Banner";

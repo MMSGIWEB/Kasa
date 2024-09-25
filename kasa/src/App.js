@@ -1,4 +1,3 @@
-import React from "react";
 import "./datas/logements.json";
 import '../src/styles/css/App.css';
 import Home from './pages/Home';

@@ -1,11 +1,7 @@
-import React from "react";
-import appts from "../../datas/logements.json"
-
-
-function Tags({nom}) {
+function Tags({ nom }) {
     return (
         <>
-        <p className="tag">{nom}</p>
+            <p className="tag">{nom}</p>
         </>
     )
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import fullStar from "../../assets/images/rate/star-active.png"
 import emptyStar from "../../assets/images/rate/star-inactive.png"
 

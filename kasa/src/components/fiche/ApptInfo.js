@@ -1,4 +1,3 @@
-import React from "react";
 import Collapse from "../collapse/Collapse";
 import Rating from "./Rating";
 import Tags from "./Tags";
@@ -8,7 +7,7 @@ import { useParams } from "react-router-dom";
 
 function ApptInfo() {
     //récup de l'id de la fiche concernée
-    const {id} = useParams()
+    const { id } = useParams()
     //fait correspondre l'id à celui du logement
     const logement = appts.find((appt) => appt.id === id)
 
@@ -24,7 +23,7 @@ function ApptInfo() {
         return (
             <li key={i}>{equipment}</li>
         );
-      });
+    });
 
     //ici j'utilise le useState pour stocker les données appts
     return (
@@ -45,7 +44,7 @@ function ApptInfo() {
                             <Host userName={logement?.host.name} userPic={logement?.host.picture} />
                         </div>
                         <div className="rating">
-                            <Rating  scaleRating={logement.rating} />
+                            <Rating scaleRating={logement.rating} />
                         </div>
                     </div>
                 </div>

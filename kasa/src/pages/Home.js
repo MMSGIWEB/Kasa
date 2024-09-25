@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import Banner from "../components/banner/Banner";
 import Appts from "../components/home/Appts";
@@ -11,9 +10,9 @@ function Home() {
             <Navbar />
             <main className="index">
                 <Banner text="Chez vous, partout et ailleurs" />
-                <Appts/>
+                <Appts />
             </main>
-            <Footer img={footerLogo} copyRights="© 2020 Kasa. All rights reserved"/>
+            <Footer img={footerLogo} copyRights="© 2020 Kasa. All rights reserved" />
         </>
     )
 }

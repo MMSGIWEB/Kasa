@@ -1,6 +1,9 @@
+//importation de la bbliothèque React dans le code
 import React from 'react';
+// permet d'utiliser les fonctionnalités de base nécessaires pour rendre votre application React, telles que ReactDOM.render
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+// mise en place du routage de l'application avec React Router
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import Error from '../src/pages/Error';
 import Fiche from './pages/Fiche';
@@ -12,26 +15,26 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    //si path != à l'un de ceux dans ce fichier alors => "/404"
-    errorElement: 
-    <>
-    <Error />
-    </>
+    //configuration d'une seule route dans un format spécifique => si path != à l'un de ceux dans ce fichier alors "/404"
+    errorElement:
+      <>
+        <Error />
+      </>
 
   },
   {
     path: "/about",
-    element: 
-    <>
-    <About />
-    </>
+    element:
+      <>
+        <About />
+      </>
   },
   {
     path: "/fiche/:id",
     element:
-    <>
-    <Fiche />
-    </>
+      <>
+        <Fiche />
+      </>
   },
 ])
 

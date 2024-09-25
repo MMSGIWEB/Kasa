@@ -1,4 +1,3 @@
-import React from "react";
 import footerLogo from "../assets/images/logo/logo-white.png";
 import Footer from "../components/footer/Footer";
 import ErrorContent from "../components/error/ErrorContent";

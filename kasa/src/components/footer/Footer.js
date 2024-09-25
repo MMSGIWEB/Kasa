@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer({ img, copyRights }) {
   return (
     <div className="footer">
