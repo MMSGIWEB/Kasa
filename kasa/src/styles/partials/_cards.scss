@@ -21,14 +21,14 @@
             display: flex;
             width: 100%;
             border-radius: 10px;
-            // height:270px;
+            min-height: 300px;
 
             .card {
                 overflow: hidden;
                 width: 100%;
 
                 .cardImg {
-                    height: 400px;
+                    height: 100%;
                     border-radius: 10px;
                     box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.15);
                 }
@@ -36,11 +36,10 @@
                 .cardTitle {
                     position: relative;
                     width: 80%;
-                    bottom: 3.5em;
+                    bottom: 4em;
                     left: 1.2em;
-                    line-height: 19px;
                     font-family: Montserrat;
-                    font-size: 1.2em;
+                    font-size: 1.5em;
                     font-weight: 700;
                     text-align: left;
                     color: #FFFFFF;
