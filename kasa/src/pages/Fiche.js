@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; //importation de la bbliothèque React dans le code
 import Footer from "../components/footer/Footer";
 import footerLogo from "../assets/images/logo/logo-white.png"
 import Slideshow from "../components/fiche/Slideshow";
