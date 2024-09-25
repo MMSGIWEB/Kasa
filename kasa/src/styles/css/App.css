@@ -126,24 +126,24 @@ header nav a.active {
   display: flex;
   width: 100%;
   border-radius: 10px;
-  min-height: 300px;
 }
 .cardsContainer article .cardLink .card {
   overflow: hidden;
   width: 100%;
 }
 .cardsContainer article .cardLink .card .cardImg {
-  height: 100%;
+  min-height: 350px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
 }
 .cardsContainer article .cardLink .card .cardTitle {
   position: relative;
   width: 80%;
-  bottom: 4em;
+  bottom: 3.5em;
   left: 1.2em;
+  line-height: 19px;
   font-family: Montserrat;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700;
   text-align: left;
   color: #FFFFFF;
