@@ -17,4 +17,5 @@ function Home() {
     )
 }
 
+//peut ê importé et utilisé dans d'autres fichiers de l'appli
 export default Home;
