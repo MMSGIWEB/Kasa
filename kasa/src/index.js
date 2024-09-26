@@ -43,6 +43,7 @@ const router = createBrowserRouter([
 
 //on définit root comme racine avec cette méthode
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//initialise le rendu initial de l'appli
 root.render(
   //composant dans 'react-router-dom' qui enveloppe l'appli afin de gérer les routes
   <React.StrictMode>

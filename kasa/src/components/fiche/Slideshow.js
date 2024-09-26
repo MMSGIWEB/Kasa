@@ -19,7 +19,7 @@ function Slideshow() {
     }
 
     //récup des images pour chaque fiche logement
-    //opérateur de sécu optionnel vérifie i 'logement' existe bien avant d'acceder à la pp
+    //opérateur de sécu optionnel vérifie si 'logement' existe bien avant d'acceder à la pp
     const pictures = logement?.pictures.map((picture, i) => {
         return (
             <img key={i} src={picture} alt="image du logement" className={getClassName(i)} />

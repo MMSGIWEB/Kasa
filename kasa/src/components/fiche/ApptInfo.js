@@ -25,7 +25,6 @@ function ApptInfo() {
         );
     });
 
-    //ici j'utilise le useState pour stocker les données appts
     return (
         <>
             <section className="infoContent">
