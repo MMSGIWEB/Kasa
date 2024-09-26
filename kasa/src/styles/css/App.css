@@ -140,12 +140,16 @@ header nav a.active {
 .cardsContainer article .cardLink .card .cardTitle {
   position: relative;
   width: 80%;
+  height: 54px;
   bottom: 4em;
   left: 1.3em;
   font-family: Montserrat;
   font-weight: 700;
   text-align: left;
   color: #FFFFFF;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .footer {
