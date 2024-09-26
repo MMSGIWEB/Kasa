@@ -1,4 +1,4 @@
-//importation de la bbliothèque React dans le code
+//importation de la bibliothèque React dans le code
 import React from 'react';
 // permet d'utiliser les fonctionnalités de base nécessaires 
 //pour rendre votre application React, telles que ReactDOM.render
