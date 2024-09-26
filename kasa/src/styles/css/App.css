@@ -121,6 +121,7 @@ header nav a.active {
 }
 .cardsContainer article {
   width: 27%;
+  height: 350px;
 }
 .cardsContainer article .cardLink {
   display: flex;
@@ -140,9 +141,8 @@ header nav a.active {
   position: relative;
   width: 80%;
   bottom: 4em;
-  left: 1.2em;
+  left: 1.3em;
   font-family: Montserrat;
-  font-size: 1.2em;
   font-weight: 700;
   text-align: left;
   color: #FFFFFF;
