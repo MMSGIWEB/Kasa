@@ -356,6 +356,9 @@ header nav a.active {
 }
 .ficheContent .infoContent .infoHeader .userContent .userInfo .userPic img {
   border-radius: 100%;
+  min-height: 15px;
+  min-width: 20%;
+  max-width: 110px;
 }
 .ficheContent .infoContent .infoHeader .userContent .rating {
   display: flex;
