@@ -1,8 +1,10 @@
 //importation de la bbliothèque React dans le code
 import React from 'react';
-// permet d'utiliser les fonctionnalités de base nécessaires pour rendre votre application React, telles que ReactDOM.render
+// permet d'utiliser les fonctionnalités de base nécessaires 
+//pour rendre votre application React, telles que ReactDOM.render
 import ReactDOM from 'react-dom/client';
-// mise en place du routage de l'application avec React Router
+// importation des modules suivantes 
+//pour la mise en place du routage de l'application avec React-Router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import Error from '../src/pages/Error';
@@ -10,12 +12,13 @@ import Fiche from './pages/Fiche';
 import About from './pages/About';
 
 
-//on définit root comme racine
 const router = createBrowserRouter([
-  {
+  {//"chemin"
     path: "/",
+    //"associé au composant:"
     element: <App />,
-    //configuration d'une seule route dans un format spécifique => si path != à l'un de ceux dans ce fichier alors "/404"
+    //configuration d'une seule route dans un format spécifique 
+    //=> si path != à l'un de ceux dans ce fichier alors "/404"
     errorElement:
       <>
         <Error />
@@ -29,7 +32,7 @@ const router = createBrowserRouter([
         <About />
       </>
   },
-  {
+  {//chemin avec paramètre URL avec id unique
     path: "/fiche/:id",
     element:
       <>
@@ -38,9 +41,12 @@ const router = createBrowserRouter([
   },
 ])
 
+//on définit root comme racine avec cette fonction
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  //composant dans 'react-router-dom' qui enveloppe l'appli afin de gérer les routes
   <React.StrictMode>
+    {/* //objet router en tant que prop */}
     <RouterProvider router={router} />
   </React.StrictMode>
 );
