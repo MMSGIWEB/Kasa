@@ -30,6 +30,10 @@ const router = createBrowserRouter([
     element:
       <>
         <About />
+      </>,
+    errorElement:
+      <>
+        <Error />
       </>
   },
   {//chemin avec paramètre URL avec id unique
@@ -37,6 +41,10 @@ const router = createBrowserRouter([
     element:
       <>
         <Fiche />
+      </>,
+    errorElement:
+      <>
+        <Error />
       </>
   },
 ])

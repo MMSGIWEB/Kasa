@@ -183,19 +183,20 @@ header nav a.active {
   padding: 6em 0;
 }
 .errorPageContainer img {
-  width: 70%;
+  width: 50%;
 }
-.errorPageContainer p, .errorPageContainer .errorLineHomeLink {
+.errorPageContainer p,
+.errorPageContainer .errorLineHomeLink {
   font-weight: 500;
 }
 .errorPageContainer p {
   color: #FF6060;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-family: "Montserrat";
   text-align: center;
 }
 .errorPageContainer .errorLineHomeLink {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: underline;
   color: #000000;
 }
