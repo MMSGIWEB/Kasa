@@ -7,10 +7,10 @@ function Slideshow() {
     const { id } = useParams()
     //fait correspondre l'id à celui du logement
     const logement = appts.find((appt) => appt.id === id)
-    //valeur d'état + fonction pour mettre à jour l'état de l'img que le slider affichera
+    //valeur d'état + fonction pour mettre à jour l'état d'affichage du slider affichera
     const [currentPicture, setCurrentPicture] = useState(0)
 
-    //fonction qui donne une classe à l'image actuelle
+    //fonction qui donne une classe à l'image affichée
     const getClassName = (i) => {
         if (i === currentPicture) {
             return "currentImg";
@@ -19,7 +19,7 @@ function Slideshow() {
     }
 
     //récup des images pour chaque fiche logement
-    //opérateur de sécu optionnel vérifie si 'logement' existe bien avant d'acceder à la pp
+    //opérateur de sécu optionnel vérifie si 'logement' existe bien avant d'acceder au tableau
     const pictures = logement?.pictures.map((picture, i) => {
         return (
             <img key={i} src={picture} alt="image du logement" className={getClassName(i)} />
