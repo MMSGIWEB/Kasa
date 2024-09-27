@@ -41,10 +41,6 @@ const router = createBrowserRouter([
     element:
       <>
         <Fiche />
-      </>,
-    errorElement:
-      <>
-        <Error />
       </>
   },
 ])
