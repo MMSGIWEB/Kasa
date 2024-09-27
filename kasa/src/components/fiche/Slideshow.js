@@ -7,7 +7,7 @@ function Slideshow() {
     const { id } = useParams()
     //fait correspondre l'id à celui du logement
     const logement = appts.find((appt) => appt.id === id)
-    //valeur d'état + fonction pour mettre à jour l'état d'affichage du slider affichera
+    //valeur d'état + fonction pour mettre à jour l'état d'affichage du slider
     const [currentPicture, setCurrentPicture] = useState(0)
 
     //fonction qui donne une classe à l'image affichée
@@ -51,7 +51,7 @@ function Slideshow() {
         <>
             <div className="infoBanner">
                 {pictures}
-                {/* conditions : si le nombre d'img est supérieur à 1 alors on intègre les flèches */}
+                {/* expression conditionnelle : si le nombre d'img est supérieur à 1 alors on intègre les flèches */}
                 <button className="arrowLeft arrow">
                     {pictures.length > 1 && (
                         <i className="fa-solid fa-chevron-left" onClick={moveToPrevious}></i>
