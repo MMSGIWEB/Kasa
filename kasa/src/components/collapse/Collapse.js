@@ -13,9 +13,9 @@ function Collapse({ title, content }) {
     return (
         <>
             <article className="collapseContent">
-                <div className="collapseTitle">
+                <div className="collapseTitle" onClick={openDescrip}>
                     <h2>{title}</h2>
-                    <div className="slideDown" onClick={openDescrip}>
+                    <div className="slideDown">
                         {/* expression conditionnelle */}
                         {/* les chevrons se remplacent selon l'état */}
                         {isOpened ? (<i className="fa-solid fa-chevron-up" ></i>)
