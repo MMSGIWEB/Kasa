@@ -17,10 +17,11 @@ function Collapse({ title, content }) {
                     <h2>{title}</h2>
                     <div className="slideDown" onClick={openDescrip}>
                         {/* les chevrons se remplacent selon l'état */}
-                        {isOpened ? (<i className="fa-solid fa-chevron-up" ></i>) 
-                        : (<i className="fa-solid fa-chevron-down" ></i>)}
+                        {isOpened ? (<i className="fa-solid fa-chevron-up" ></i>)
+                            : (<i className="fa-solid fa-chevron-down" ></i>)}
                     </div>
                 </div>
+                {/* affiche le descrip si isOpened est true */}
                 {isOpened && <div className="descrip">
                     {/* description sera visible si true */}
                     <div className="descripContent">{content}</div>
