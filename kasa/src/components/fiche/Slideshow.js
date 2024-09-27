@@ -3,7 +3,7 @@ import appts from "../../datas/logements.json"
 import { useParams } from "react-router-dom";
 
 function Slideshow() {
-    //récup de l'id de la fiche concernée
+    //on extrait la v 'id' pour récup de l'id de la fiche concernée
     const { id } = useParams()
     //fait correspondre l'id à celui du logement
     const logement = appts.find((appt) => appt.id === id)
