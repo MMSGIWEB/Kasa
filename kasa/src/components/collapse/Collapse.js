@@ -16,6 +16,7 @@ function Collapse({ title, content }) {
                 <div className="collapseTitle">
                     <h2>{title}</h2>
                     <div className="slideDown" onClick={openDescrip}>
+                        {/* expression conditionnelle */}
                         {/* les chevrons se remplacent selon l'état */}
                         {isOpened ? (<i className="fa-solid fa-chevron-up" ></i>)
                             : (<i className="fa-solid fa-chevron-down" ></i>)}
