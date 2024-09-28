@@ -43,6 +43,13 @@ const router = createBrowserRouter([
         <Fiche />
       </>
   },
+  {
+    path: "/404",
+    element:
+      <>
+        <Error />
+      </>
+  }
 ])
 
 //on définit root comme racine avec cette méthode

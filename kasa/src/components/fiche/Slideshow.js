@@ -18,6 +18,14 @@ function Slideshow() {
         }
     }
 
+    //décompte des img sous format "nb/nbTotalimg"
+    const getFormattedImageCount = () => {
+        const totalImageCount = logement?.pictures.length;
+        const currentImageCount = currentPicture + 1;
+
+        return <div className="imgAccount">{`${currentImageCount}/${totalImageCount}`}</div>;
+    }
+
     //récup des images pour chaque fiche logement
     //opérateur de sécu optionnel vérifie si 'logement' existe bien avant d'acceder au tableau
     const pictures = logement?.pictures.map((picture, i) => {
@@ -30,20 +38,23 @@ function Slideshow() {
         //currentState va changer de 1 à 1, sans dépasser la longueur du nb d'img
         //'%..' limite la longueur de l'arrêt
         setCurrentPicture((currentPicture + 1) % pictures.length)
+        getFormattedImageCount()
     }
 
     const moveToPrevious = () => {
-        //notre constante équivaut l'img actuelle - 1 lorsqu'on on arrive à la fin du nb d'imgs
-        const afterPictureLength = currentPicture - 1
-        //mais si c'est inférieur à 0 on applique 
-        if (afterPictureLength < 0) {
-            //application du changement d'img avec le code en ()
-            setCurrentPicture(pictures.length - 1)
-            return
-        }
-        //sinon le code habituel pour le changement d'img
-        setCurrentPicture((currentPicture - 1) % pictures.length)
 
+        setCurrentPicture((currentPicture - 1 + pictures.length) % pictures.length);
+
+        // //notre constante équivaut l'img actuelle - 1 lorsqu'on on arrive à la fin du nb d'imgs
+        // const afterPictureLength = currentPicture - 1
+        // //mais si c'est inférieur à 0 on applique 
+        // if (afterPictureLength < 0) {
+        //     //application du changement d'img avec le code en ()
+        //     setCurrentPicture(pictures.length - 1)
+        //     return
+        // }
+        // //sinon le code habituel pour le changement d'img
+        // setCurrentPicture((currentPicture - 1) % pictures.length)
     }
 
 
