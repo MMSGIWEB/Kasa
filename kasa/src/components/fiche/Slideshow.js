@@ -20,10 +20,12 @@ function Slideshow() {
 
     //décompte des img sous format "nb/nbTotalimg"
     const getFormattedImageCount = () => {
-        const totalImageCount = logement?.pictures.length;
-        const currentImageCount = currentPicture + 1;
+        if (pictures.length > 1) {
+            const totalImageCount = logement?.pictures.length;
+            const currentImageCount = currentPicture + 1;
 
-        return `${currentImageCount}/${totalImageCount}`
+            return `${currentImageCount}/${totalImageCount}`
+        }
     }
 
     //récup des images pour chaque fiche logement
