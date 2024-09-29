@@ -23,7 +23,7 @@ function Slideshow() {
         const totalImageCount = logement?.pictures.length;
         const currentImageCount = currentPicture + 1;
 
-        return <div className="imgAccount">{`${currentImageCount}/${totalImageCount}`}</div>;
+        return `${currentImageCount}/${totalImageCount}`
     }
 
     //récup des images pour chaque fiche logement
@@ -38,7 +38,6 @@ function Slideshow() {
         //currentState va changer de 1 à 1, sans dépasser la longueur du nb d'img
         //'%..' limite la longueur de l'arrêt
         setCurrentPicture((currentPicture + 1) % pictures.length)
-        getFormattedImageCount()
     }
 
     const moveToPrevious = () => {
@@ -73,6 +72,7 @@ function Slideshow() {
                         <i className="fa-solid fa-chevron-right" onClick={moveToNext}></i>
                     )}
                 </button>
+                <span className="imgCount">{getFormattedImageCount()}</span>
             </div>
 
         </>

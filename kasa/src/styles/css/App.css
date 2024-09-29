@@ -274,6 +274,14 @@ header nav a.active {
 .ficheContent .infoBanner .arrowRight {
   right: 10px;
 }
+.ficheContent .infoBanner .imgCount {
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 40px;
+  font-family: "Montserrat";
+}
 .ficheContent .infoContent {
   width: 100%;
   gap: 1em;
