@@ -14,7 +14,7 @@ import About from './pages/About';
 
 const router = createBrowserRouter([
   {//"chemin"
-    path: "/",
+    path: "/Portfolio-architecte-sophie-bluel",
     //"associé au composant:"
     element: <App />,
     //configuration d'une seule route dans un format spécifique 
